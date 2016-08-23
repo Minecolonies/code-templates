@@ -46,6 +46,24 @@ public class MyClass extends AbstractMyClass{
     /**
      * This methods froms from {@link org.company.interfaces.IMyInterface}
      */
+    @NotNull
+    public String makeItWork(@Nullable String foo, @NotNull String bar){
+        // Check for null on @Nullable
+        if(foo == null){
+            //Early return on null checks and important requirements
+            return "";
+        }
+        
+        //@NotNull requires the caller to check for null
+        if(bar.length > 0){
+            return foo + bar
+        }
+        return foo;
+    }
+    
+    /**
+     * This methods froms from {@link org.company.interfaces.IMyInterface}
+     */
     @Override
     public void doSomething(){
         if(checkCondition()){
