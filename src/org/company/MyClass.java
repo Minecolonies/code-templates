@@ -5,11 +5,9 @@ import org.company.abstracts.AbstractMyClass;
 /**
  * The {@link MyClass} is a simple class.
  *
- * @author MyName
  * @since Current.Project.Version
  */
-public class MyClass extends AbstractMyClass
-{
+public class MyClass extends AbstractMyClass{
     /**
      * This is a constant.
      */
@@ -25,8 +23,7 @@ public class MyClass extends AbstractMyClass
      *
      * Doing nothing.
      */
-    public MyClass( )
-    {
+    public MyClass(){
         this(0);
     }
 
@@ -35,16 +32,14 @@ public class MyClass extends AbstractMyClass
      *
      * @param anInt The new anInt value
      */
-    public MyClass(final int anInt)
-    {
+    public MyClass(final int anInt){
         this.anInt = anInt;
     }
 
     /**
      * A method doing exactly nothing.
      */
-    public void doNothing( )
-    {
+    public void doNothing(){
         // Nothing
     }
 
@@ -52,14 +47,10 @@ public class MyClass extends AbstractMyClass
      * This methods froms from {@link org.company.interfaces.IMyInterface}
      */
     @Override
-    public void doSomething( )
-    {
-        if ( checkCondition( ) )
-        {
+    public void doSomething(){
+        if(checkCondition()){
             // Do something
-        }
-        else
-        {
+        }else{
             // Do something else
         }
     }
@@ -69,17 +60,15 @@ public class MyClass extends AbstractMyClass
      *
      * @return True if {@link MyClass#anInt} is greater 0
      */
-    private boolean checkCondition( )
-    {
-        return ( (this.anInt > 0) ? true : false);
+    private boolean checkCondition(){
+        return this.anInt > 0;
     }
 
-    public static void main(String...args)
-    {
-        MyClass myClass = new MyClass( );
+    public static void main(String... args){
+        MyClass myClass = new MyClass();
 
-        myClass.equals(new Object( ));
+        myClass.equals(new Object());
     }
 
 }
-// Empty line at the end!
+// Empty line at the end for git!
