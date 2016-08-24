@@ -13,12 +13,12 @@ public class MyClass extends AbstractMyClass
     /**
      * This is a constant.
      */
-    public static final String MY_TEXT_CONSTANT = "Foobar";
+    public  static  final   String  MY_TEXT_CONSTANT    = "Foobar";
 
     /**
      * This is a field.
      */
-    private final int anInt;
+    private final   int     anInt;
 
     /**
      * The default constructor.
