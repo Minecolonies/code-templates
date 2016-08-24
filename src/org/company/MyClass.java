@@ -7,7 +7,7 @@ import org.company.abstracts.AbstractMyClass;
  *
  * @since Current.Project.Version
  */
-public class MyClass extends AbstractMyClass{
+public class MyClass extends AbstractMyClass {
     /**
      * This is a constant.
      */
@@ -23,7 +23,7 @@ public class MyClass extends AbstractMyClass{
      *
      * Doing nothing.
      */
-    public MyClass(){
+    public MyClass() {
         this(0);
     }
 
@@ -32,14 +32,14 @@ public class MyClass extends AbstractMyClass{
      *
      * @param anInt The new anInt value
      */
-    public MyClass(final int anInt){
+    public MyClass(final int anInt) {
         this.anInt = anInt;
     }
 
     /**
      * A method doing exactly nothing.
      */
-    public void doNothing(){
+    public void doNothing() {
         // Nothing
     }
 
@@ -47,15 +47,15 @@ public class MyClass extends AbstractMyClass{
      * This methods froms from {@link org.company.interfaces.IMyInterface}
      */
     @NotNull
-    public String makeItWork(@Nullable String foo, @NotNull String bar){
+    public String makeItWork(@Nullable String foo, @NotNull String bar) {
         // Check for null on @Nullable
-        if(foo == null){
+        if(foo == null) {
             //Early return on null checks and important requirements
             return "";
         }
         
         //@NotNull requires the caller to check for null
-        if(bar.length > 0){
+        if(bar.isEmpty()) {
             return foo + bar
         }
         return foo;
@@ -65,10 +65,10 @@ public class MyClass extends AbstractMyClass{
      * This methods froms from {@link org.company.interfaces.IMyInterface}
      */
     @Override
-    public void doSomething(){
-        if(checkCondition()){
+    public void doSomething() {
+        if(checkCondition()) {
             // Do something
-        }else{
+        } else {
             // Do something else
         }
     }
@@ -78,11 +78,11 @@ public class MyClass extends AbstractMyClass{
      *
      * @return True if {@link MyClass#anInt} is greater 0
      */
-    private boolean checkCondition(){
+    private boolean checkCondition() {
         return this.anInt > 0;
     }
 
-    public static void main(String... args){
+    public static void main(String... args) {
         MyClass myClass = new MyClass();
 
         myClass.equals(new Object());
