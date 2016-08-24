@@ -5,7 +5,7 @@ package org.company.interfaces;
  *
  * @since Current.Project.Version
  */
-public interface IMyInterface{
+public interface IMyInterface {
 
     /**
      * This method does something.
