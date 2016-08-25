@@ -58,7 +58,7 @@ public class MyClass extends AbstractMyClass {
         
         //@NotNull requires the caller to check for null
         if(bar.isEmpty()) {
-            return foo + bar
+            return foo + bar;
         }
         return foo;
     }
