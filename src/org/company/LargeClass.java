@@ -16,9 +16,9 @@ public class LargeClass
 
     private final   String fieldOne     = "field one value";
     private         String fieldTwo     = "field two value";
-    private final   String fieldThree   = "field three value";
+    private final   Object fieldThree   = new Object();
     private final   String fieldFour    = "field four value";
-    private         String fieldFive    = "field five value";
+    private         int    fieldFive    = 5;
     private final   String fieldSix     = "field six value";
     private         String fieldSeven   = "field seven value";
 
