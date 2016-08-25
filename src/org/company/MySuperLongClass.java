@@ -8,6 +8,11 @@ import org.company.abstracts.AbstractMyClass;
 public class MySuperLongClass
 {
 
+    public MySuperLongClass()
+    {
+        //
+    }
+
     public MySuperLongClass(int one, String two, Object three, long four, double five, float six, MyEnum seven, MyClass eight, AbstractMyClass nine)
     {
         //

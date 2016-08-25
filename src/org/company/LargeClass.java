@@ -7,10 +7,10 @@ public class LargeClass
 {
     
     public  static final    String              staticVarOne    = "var one content";
-    public  static          Object              staticVarTwo    = "var twp content";
-    public  static          Integer             staticVarThree  = "var three content";
+    public  static          Object              staticVarTwo    = new Object();
+    public  static          Integer             staticVarThree  = 3;
     public  static final    String              staticVarFour   = "var four content";
-    public  static final    MySuperLongClass    staticVarFive   = "var five content";
+    public  static final    MySuperLongClass    staticVarFive   = new MySuperLongClass();
     public  static          String              staticVarSix    = "var six content";
     public  static          String              staticVarSeven  = "var seven content";
 
