@@ -10,6 +10,7 @@ import org.company.abstracts.AbstractMyClass;
  * @since Current.Project.Version
  */
 public class MyClass extends AbstractMyClass {
+
     /**
      * This is a constant.
      */
