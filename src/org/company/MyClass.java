@@ -1,5 +1,7 @@
 package org.company;
 
+import com.sun.istack.internal.NotNull;
+import com.sun.istack.internal.Nullable;
 import org.company.abstracts.AbstractMyClass;
 
 /**
