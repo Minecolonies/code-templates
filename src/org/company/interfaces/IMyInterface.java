@@ -11,5 +11,4 @@ public interface IMyInterface {
      * This method does something.
      */
     public void doSomething();
-
 }
