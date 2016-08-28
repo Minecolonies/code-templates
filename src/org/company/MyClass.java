@@ -14,16 +14,16 @@ public class MyClass extends AbstractMyClass {
     /**
      * This is a constant.
      */
-    public  static  final   String  MY_TEXT_CONSTANT    = "Foobar";
+    public static final String MY_TEXT_CONSTANT = "Foobar";
 
     /**
      * This is a field.
      */
-    private final   int     anInt;
+    private final int anInt;
 
     /**
      * The default constructor.
-     *
+     * <p>
      * Doing nothing.
      */
     public MyClass() {
@@ -39,6 +39,12 @@ public class MyClass extends AbstractMyClass {
         this.anInt = anInt;
     }
 
+    public static void main(String... args) {
+        MyClass myClass = new MyClass();
+
+        myClass.equals(new Object());
+    }
+
     /**
      * A method doing exactly nothing.
      */
@@ -52,24 +58,24 @@ public class MyClass extends AbstractMyClass {
     @NotNull
     public String makeItWork(@Nullable String foo, @NotNull String bar) {
         // Check for null on @Nullable
-        if(foo == null) {
+        if (foo == null) {
             //Early return on null checks and important requirements
             return "";
         }
-        
+
         //@NotNull requires the caller to check for null
-        if(bar.isEmpty()) {
+        if (bar.isEmpty()) {
             return foo + bar;
         }
         return foo;
     }
-    
+
     /**
      * This methods froms from {@link org.company.interfaces.IMyInterface}
      */
     @Override
     public void doSomething() {
-        if(checkCondition()) {
+        if (checkCondition()) {
             // Do something
         } else {
             // Do something else
@@ -84,12 +90,5 @@ public class MyClass extends AbstractMyClass {
     private boolean checkCondition() {
         return this.anInt > 0;
     }
-
-    public static void main(String... args) {
-        MyClass myClass = new MyClass();
-
-        myClass.equals(new Object());
-    }
-
 }
 // Empty line at the end for git!
