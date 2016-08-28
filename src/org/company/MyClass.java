@@ -1,8 +1,8 @@
 package org.company;
 
-import com.sun.istack.internal.NotNull;
-import com.sun.istack.internal.Nullable;
 import org.company.abstracts.AbstractMyClass;
+import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
 
 /**
  * The {@link MyClass} is a simple class.
@@ -40,7 +40,7 @@ public class MyClass extends AbstractMyClass {
     }
 
     public static void main(String... args) {
-        MyClass myClass = new MyClass();
+        @NotNull MyClass myClass = new MyClass();
 
         myClass.equals(new Object());
     }
@@ -55,6 +55,7 @@ public class MyClass extends AbstractMyClass {
     /**
      * This methods froms from {@link org.company.interfaces.IMyInterface}
      */
+    @Nullable
     @NotNull
     public String makeItWork(@Nullable String foo, @NotNull String bar) {
         // Check for null on @Nullable
