@@ -11,7 +11,8 @@ import java.util.List;
  *
  * @since Current.Project.Version
  */
-public class MyFunctionalClass extends AbstractMyClass {
+public class MyFunctionalClass extends AbstractMyClass
+{
 
     /**
      * This is a constant.
@@ -30,7 +31,8 @@ public class MyFunctionalClass extends AbstractMyClass {
      * <p>
      * Doing nothing.
      */
-    public MyFunctionalClass() {
+    public MyFunctionalClass()
+    {
         this(0);
     }
 
@@ -39,7 +41,8 @@ public class MyFunctionalClass extends AbstractMyClass {
      *
      * @param anInt The new anInt value
      */
-    public MyFunctionalClass(final int anInt) {
+    public MyFunctionalClass(final int anInt)
+    {
         this.anInt = anInt;
     }
 
@@ -47,12 +50,14 @@ public class MyFunctionalClass extends AbstractMyClass {
      * This method does something.
      */
     @Override
-    public void doSomething() {
+    public void doSomething()
+    {
         @NotNull final List<String> superList = generateList();
         final boolean allEmpty = superList
                 .stream()
                 .allMatch(String::isEmpty);
-        if (!allEmpty) {
+        if (!allEmpty)
+        {
             int sum = Arrays
                     .stream(MY_TEXT_CONSTANT.split(""))
                     .map(s -> s.charAt(0))
@@ -63,7 +68,8 @@ public class MyFunctionalClass extends AbstractMyClass {
     }
 
     @NotNull
-    private List<String> generateList() {
+    private List<String> generateList()
+    {
         return Arrays.asList(
                 MY_TEXT_CONSTANT, "Cooool"
         );

@@ -5,15 +5,18 @@ import org.company.interfaces.IMyInterface;
 /**
  * @since Current.Project.Version
  */
-public abstract class AbstractMyClass implements IMyInterface {
+public abstract class AbstractMyClass implements IMyInterface
+{
 
     private int localInt;
 
-    public AbstractMyClass() {
+    public AbstractMyClass()
+    {
 
     }
 
-    public AbstractMyClass(final int localInt) {
+    public AbstractMyClass(final int localInt)
+    {
         this.localInt = localInt;
     }
 }
